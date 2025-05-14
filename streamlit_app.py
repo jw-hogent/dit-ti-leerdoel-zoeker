@@ -55,7 +55,7 @@ def search_data(query):
 # Simple UI: text input and a search button.
 query = st.text_input("Beschrijf wat je zoekt:", "")
 
-if st.button("Zoek"):
+if not query.isspace() and query != "":
     # Get search results from your function.
     results = search_data(query)
     
