@@ -77,10 +77,10 @@ if not query.isspace() and query != "":
                 print(f"result['LDcode'] {result['LDcode']}")
                 if result['LDcode'] in oude_vakken:
                     print(f"result['LDcode'] in oude_vakken {result['LDcode']}")
-                    st.markdown(f"**Used in:** {oude_vakken[result['LDcode']]}")
+                    st.markdown(f"**Gebruikt in:** {oude_vakken[result['LDcode']]}")
                 if result['LDcode'] in nieuwe_vakken:
                     print(f"result['LDcode'] in nieuwe_vakken {result['LDcode']}")
-                    st.markdown(f"**Suggested OLODs:** {nieuwe_vakken[result['LDcode']]}")
+                    st.markdown(f"**Voorgestelde OLODs:** {nieuwe_vakken[result['LDcode']]}")
                 
                 st.write("---")
     else:
